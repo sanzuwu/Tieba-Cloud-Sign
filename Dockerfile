@@ -15,7 +15,7 @@ ENV DB_HOST='127.0.0.1'\
     CONIFG_PATH='/srv/www/config.php' \
     CSRF='false'
 
-RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+#RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 RUN git clone https://github.com/MoeNetwork/Tieba-Cloud-Sign.git /srv/www && \
     rm -r /var/cache/apk && \
